@@ -1,0 +1,161 @@
+/* container */
+.container {
+    min-width: 360px;
+    max-width: 640px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* main title */
+.title {
+    text-align: center;
+    font-size: 16px;
+}
+/* image */
+img {
+    width: 10%;
+}
+/* body color */
+.body {
+    background-color: lightgrey;
+}
+/* top nav menu */
+.main-menu {
+    padding: .75% 1% .75% 1%;
+    border: 1px solid black;
+    text-align: center;
+    word-spacing: 25px;
+    font-size: 16px;
+    background-color: azure;
+}
+/* bio font */
+.home-title {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+/* bio */
+.home {
+    border: 1px solid black;
+    text-align: left;
+    padding: .75% 1% .75% 1%;
+    display: flex;
+    background-color: azure;
+}
+/* experience title */
+.works-title {
+    font-family:'Courier New', Courier, monospace;
+}
+/* experience container */
+.works-border {
+    border: 1px solid black;
+    text-align: left;
+    padding: .75% 1% .75% 1%;
+    background-color: azure;
+}
+/* contact title */
+.contact-title {
+    font-family:'Courier New', Courier, monospace;
+}
+/* contact container */
+.contact {
+    
+    border: 1px solid black;
+    text-align: left;
+    padding: .75% 1% .75% 1%;
+    background-color: azure;
+}
+/* resume title */
+.about-title {
+    font-family:'Courier New', Courier, monospace;
+}
+/* resume container */
+.resume {
+    display: flex;
+    border: 1px solid black;
+    text-align: left;
+    padding: .75% 1% .75% 1%;
+    background-color: azure;
+}
+/* link color */
+a:link {
+    color:navy
+}
+/* visited link color */
+a:link, a:visited {
+    text-decoration: none;
+}
+/* hover link color */
+a:hover {
+    color:cadetblue;
+}
+/* activated link color */
+a:active {
+    color:blue;
+}
+/* bottom mobile nav menu */
+.footer {
+    padding: .75rem 1rem .75rem 1rem;
+    border: 1px solid black;
+    text-align: center;
+    word-spacing: 25px;
+    font-size: 16px;
+}
+
+
+/* Desktop Sections */
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .body {
+        max-width: 1920px;
+    }
+    .main-menu {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .desk-main {
+        padding: 0% 0.75% 0% 0%;
+        border: 1px solid black;
+        text-align: left;
+        word-spacing: 25px;
+        font-size: 16px;
+        background-color: azure;
+        margin-left: -10%;
+        margin-top: 11%;
+        position: absolute;
+        list-style-type: none;
+    }
+    .ham-menu {
+        display: none;
+    }
+    .works-title {
+        margin-left: 0%;
+    }
+    .works-border {
+        margin-left: 0%;
+        width: 50%;
+    }
+    .contact-title {
+        margin-left: 55%;
+        margin-top: -70%;
+    }
+    .contact {
+        margin-top: 0%;
+        margin-left: 55%;
+        width: 51%;
+    }
+    .about-title {
+        margin-left: 55%;
+    }
+    .resume {
+        margin-left: 55%;
+        width: 40%;
+    }
+}
+
+/* mobile specific */
+@media (min-width: 320px) and (max-width: 800px){
+    .desk-main {
+        display: none;
+    }
+}
